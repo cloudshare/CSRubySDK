@@ -36,9 +36,11 @@ gem install cloudshare-sdk
 
 ## Usage Example
 
+```ruby
 require 'cloudshare-sdk'
 api = CloudshareSDK::CSHighApi.new('<API-ID>', '<API-KEY>')
 puts api.get_environment_status_list
+```
 
 
 ## References
