@@ -2,8 +2,8 @@ require 'cloudshare-sdk/cs_low_api'
 
 module CloudshareSDK
   class CSHighApi
-    def initialize(id, key, version=CSLowApi::DEFAULT_VERSION, host=CSLowApi::DEFAULT_HOST)
-      @lowapi = CSLowApi.new(id, key, version, host)
+    def initialize(id, key, host=CSLowApi::DEFAULT_HOST, version=CSLowApi::DEFAULT_VERSION)
+      @lowapi = CSLowApi.new(id, key, host, version)
     end
 
     def call(category, command, params={})

@@ -54,11 +54,11 @@ module CloudshareSDK
     DEFAULT_HOST = "use.cloudshare.com"
     DEFAULT_VERSION = "v2"
 
-    def initialize(id, key, version=DEFAULT_VERSION, host=DEFAULT_HOST)
+    def initialize(id, key, host=DEFAULT_HOST, version=DEFAULT_VERSION)
       @id = id
       @key = key
-      @version = version
       @host = host
+      @version = version
     end
 
     def call(category, command, params={})
